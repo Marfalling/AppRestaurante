@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Bottom Navigation View -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- ImageView -->
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="36dp" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/profile_image_desc"
+            android:src="@drawable/ic_profile" />
+
+        <!-- TextView - Profile Name -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Lorem Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView - Profile Subtitle -->
+        <TextView
+            android:id="@+id/profile_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Lorem Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_cart"
+            android:layout_width="338dp"
+            android:layout_height="376dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1" />
+
+        <!-- Total Amount TextView -->
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Total: S/0.00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Finalize Purchase Button -->
+        <Button
+            android:id="@+id/finalize_purchase_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Finalizar Compra" />
+    </LinearLayout>
+
+</FrameLayout>

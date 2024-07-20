@@ -1,0 +1,17 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_postre" />
+        <include layout="@layout/item_postre1" />
+        <include layout="@layout/item_postre2" />
+        <include layout="@layout/item_postre3" />
+        <include layout="@layout/item_postre4" />
+
+    </LinearLayout>
+</ScrollView>

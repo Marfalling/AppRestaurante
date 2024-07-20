@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ReservacionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="647dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Centrar contenido -->
+
+        <!-- Título de la reservación -->
+
+        <!-- Contenedor de los campos -->
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="475dp"
+            android:gravity="center"
+            android:orientation="vertical"> <!-- Centrar contenido -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Reservación"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="305dp"
+                android:layout_height="55dp"
+                android:hint="Nombre"
+                android:padding="8dp" />
+
+            <!-- Selector de Fecha -->
+            <LinearLayout
+                android:layout_width="304dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_fecha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Fecha (DD/MM/AAAA)"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Seleccionar" />
+            </LinearLayout>
+
+            <!-- Selector de Hora -->
+            <LinearLayout
+                android:layout_width="301dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_hora"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Hora (HH:MM)"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Seleccionar" />
+            </LinearLayout>
+
+            <!-- Selector de Número de Personas -->
+            <Spinner
+                android:id="@+id/sp_personas"
+                android:layout_width="306dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/numero_personas"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/et_notas"
+                android:layout_width="302dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:hint="Notas Adicionales"
+                android:padding="8dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/btn_confirmar"
+                android:layout_width="287dp"
+                android:layout_height="64dp"
+                android:text="Confirmar Reservacion"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

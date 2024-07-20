@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Acuario</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- NUEVO -->
+
+    <string name="logo_desc">Logo de OutfitOasis</string>
+    <string name="profile_image_desc">Profile Image</string>
+    <string name="add_to_cart_desc">Add to Cart</string>
+    <string name="product_image_desc">Product Image</string>
+    <string name="delete_product_desc">Delete Product</string>
+</resources>
